@@ -175,38 +175,39 @@ button {
   font-size: 14px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   body {
   }
   .wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 400px;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
   }
 
   .scores {
-    width: 180px;
+    width: 170px;
   }
 
   button {
-    width: 180px;
+    width: 170px;
   }
 
   .results-container {
-    min-width: 250px;
+    width: 50%;
     border-radius: 0px 0px 16px 16px;
   }
 
   .summary-container {
     margin-top: -10px;
-    margin-left: 1px;
-    min-width: 250px;
+    margin-left: 0;
+    width: 50%;
     border-radius: 0px 0px 0px 0px;
   }
 
   .info {
     width: 70%;
-    font-size: 10px;
+    font-size: 9px;
   }
   .results-grade {
     margin: 0;
@@ -214,6 +215,10 @@ button {
 
   .summary {
     margin-top: 40px;
-    width: 210px;
+    margin-left: 50px;
+  }
+
+  .summary {
+    font-size: 12px;
   }
 }
